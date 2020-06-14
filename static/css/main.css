@@ -1,0 +1,25 @@
+body {
+    margin: 100;
+    font-family: sans-serif;
+}
+
+a:link {
+
+    color: gray;
+    
+    }
+    
+a:visited {
+    color: green;
+    
+    }
+    
+a:hover {
+    color: purple;
+    
+    }
+    
+a:active {
+    color: teal;
+    
+    }
