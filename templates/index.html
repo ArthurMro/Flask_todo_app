@@ -1,17 +1,17 @@
 {% extends 'base.html'%}
 
 {% block head %}
-<title>Sin counter</title>
+<title>Sins of the world</title>
 {% endblock %}
 
 {% block body %}
-<div class='content'>
-    <h1> The key to Heaven's door </h1>
-    <p> To enter Heaven, you need to confess your sins. Add here your sins and be forgiven</p>
+<div class='content' align="center">
+    <h1 style="color:whitesmoke; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;"> The key to Heaven's door </h1>
+    <p style="color:whitesmoke"> To enter Heaven, you need to confess your sins. Add here your sins and be forgiven</p>
     {% if tasks|length <1 %}
     <p>There is no sin yet, confess one below</p>
     {% else %}
-    <table border="1">
+    <table border="1" width= 80% style="background-color: #ffffff;"
         <tr>
             <th>Sin</th>
             <th>Added</th>
@@ -30,7 +30,7 @@
         {% endfor %}
     </table>
     {% endif %}
-
+<p></p>
     <!-- We use the POST method here -->
     <form action='/' method="POST">
         <input type='text' name='content' id='content'>
