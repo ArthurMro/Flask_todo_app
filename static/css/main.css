@@ -1,7 +1,11 @@
 body {
     margin: 100;
     font-family: sans-serif;
-}
+    background-image: url("../css/heaven_to_hell.jpg");
+    background-color: linear-gradient(to bottom right, blue, red);
+    background-repeat: repeat-y;
+    }
+
 
 a:link {
 
